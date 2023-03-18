@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ibolot</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="main_bottom">Главное</string>
+    <string name="service_bottom">Услуги</string>
+    <string name="profile_bottom">Профиль</string>
+</resources>
