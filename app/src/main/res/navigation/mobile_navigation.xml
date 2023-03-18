@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_main">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.ibolot.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/navigation_main"
+        android:name="com.example.ibolot.ui.fragments.main.MainFragment"
+        android:label="@string/main_bottom"
+        tools:layout="@layout/fragment_main" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.ibolot.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_service"
+        android:name="com.example.ibolot.ui.fragments.service.ServiceFragment"
+        android:label="@string/service_bottom"
+        tools:layout="@layout/fragment_service" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.ibolot.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_profile"
+        android:name="com.example.ibolot.ui.fragments.profile.ProfileFragment"
+        android:label="@string/profile_bottom"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
