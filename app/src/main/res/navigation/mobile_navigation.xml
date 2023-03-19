@@ -8,18 +8,17 @@
     <fragment
         android:id="@+id/navigation_main"
         android:name="com.example.ibolot.ui.fragments.main.MainFragment"
-        android:label="@string/main_bottom"
-        tools:layout="@layout/fragment_main" />
+        android:label="@string/main_bottom"/>
 
     <fragment
         android:id="@+id/navigation_service"
         android:name="com.example.ibolot.ui.fragments.service.ServiceFragment"
         android:label="@string/service_bottom"
-        tools:layout="@layout/fragment_service" />
+        tools:layout="@layout/fragment_service"/>
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.ibolot.ui.fragments.profile.ProfileFragment"
-        android:label="@string/profile_bottom"
-        tools:layout="@layout/fragment_profile" />
+        android:label="@string/profile_bottom" />
+    
 </navigation>
