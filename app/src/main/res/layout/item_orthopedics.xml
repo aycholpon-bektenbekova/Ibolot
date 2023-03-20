@@ -15,24 +15,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
 
-        <ImageView
-            android:id="@+id/img_services"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitStart"
-            app:cardCornerRadius="10dp"
-            android:src="@drawable/item"/>
+            <ImageView
+                android:id="@+id/img_orthopedics"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitStart"
+                app:cardCornerRadius="10dp"
+                android:src="@drawable/orthopedics"/>
 
         <TextView
-            android:id="@+id/tvServices"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/ortophedia"
-            android:textAlignment="center"
-            android:textSize="@dimen/text_size_services"
+            android:layout_width="278dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/protez"
+            android:textAlignment="viewStart"
             android:textColor="@color/black"
-            android:layout_marginTop="33dp"
-            android:layout_marginStart="26dp"/>
+            android:textSize="20sp" />
 
     </androidx.cardview.widget.CardView>
 

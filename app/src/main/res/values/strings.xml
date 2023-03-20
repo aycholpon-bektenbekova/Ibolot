@@ -8,4 +8,13 @@
     <string name="profile_bottom">Профиль</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ortophedia">Ортопедия</string>
+    <string name="protez">Протезирование при полном отсутствии зубов</string>
+    <string name="submit">записаться</string>
+    <string name="desc_protez">Полный съемный протез является наиболее простым и бюджетным вариантом для тех, у кого совсем не осталось зубов. В данном случае чаще всего используется акриловая или нейлоновая пластмасса.</string>
+    <string name="desc2">- Надежная конструкция - Крепкая фиксация - Равномерное распределение нагрузки - Комфортная носка</string>
+    <string name="price">Цена:    1000 сом</string>
+    <string name="search_hint">Поиск услуг</string>
+    <string name="enter_search">Введите поиск</string>
+    <string name="doctors_list">Врачи на которых можно записаться</string>
 </resources>

@@ -16,23 +16,23 @@
         app:layout_constraintTop_toTopOf="parent" >
 
         <ImageView
-            android:id="@+id/img_services"
+            android:id="@+id/img_doctor"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitStart"
             app:cardCornerRadius="10dp"
-            android:src="@drawable/item"/>
+            android:src="@drawable/item_doctor"/>
 
         <TextView
-            android:id="@+id/tvServices"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/ortophedia"
+            android:text="Антон Иванович"
+            android:paddingStart="57dp"
             android:textAlignment="center"
             android:textSize="@dimen/text_size_services"
             android:textColor="@color/black"
-            android:layout_marginTop="33dp"
-            android:layout_marginStart="26dp"/>
+            android:layout_marginTop="31dp"
+            android:layout_marginStart="47dp"/>
 
     </androidx.cardview.widget.CardView>
 

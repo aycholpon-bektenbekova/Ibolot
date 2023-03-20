@@ -31,6 +31,11 @@ class MainActivity : AppCompatActivity() {
                 R.id.navigation_profile
             )
         )
+        val bottomFragments = arrayListOf(
+            R.id.navigation_main,
+            R.id.navigation_service,
+            R.id.navigation_profile
+        )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
