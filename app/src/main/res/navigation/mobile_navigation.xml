@@ -20,5 +20,16 @@
         android:id="@+id/navigation_profile"
         android:name="com.example.ibolot.ui.fragments.profile.ProfileFragment"
         android:label="@string/profile_bottom" />
-    
+
+    <fragment
+        android:id="@+id/ortophedicsFragment"
+        android:name="com.example.ibolot.ui.fragments.service.orthopedics.OrthopedicsFragment"
+        android:label="fragment_ortophedics"
+        tools:layout="@layout/fragment_orthopedics" />
+    <fragment
+        android:id="@+id/prostheticsFragment"
+        android:name="com.example.ibolot.ui.fragments.service.prosthetic.ProstheticsFragment"
+        android:label="fragment_prosthetics"
+        tools:layout="@layout/fragment_prosthetics" />
+
 </navigation>
