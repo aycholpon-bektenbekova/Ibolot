@@ -3,10 +3,13 @@ package com.example.ibolot.ui.fragments.service.adapters
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.ibolot.databinding.ItemServicesBinding
 import com.example.ibolot.domain.model.ServiceItem
+import com.example.ibolot.ui.fragments.service.ServiceFragment
 
-class ServicesAdapter (
+class ServicesAdapter(
+    var context: ServiceFragment,
     private var onItemClick: (ServiceItem) -> Unit
         ) : RecyclerView.Adapter<ServicesAdapter.ServicesViewHolder>() {
 
@@ -33,7 +36,7 @@ class ServicesAdapter (
                 onItemClick.invoke(item)
             }
             binding.tvServices.text = item.title
-
+            Glide.with(context).load(item.image).into(binding.imgServices)
         }
     }
 

@@ -7,7 +7,6 @@ import com.example.ibolot.R
 import com.example.ibolot.databinding.FragmentOrthopedicsBinding
 import com.example.ibolot.ui.fragments.base.BaseFragment
 
-
 class OrthopedicsFragment : BaseFragment(R.layout.fragment_orthopedics) {
 
     private val binding by viewBinding(FragmentOrthopedicsBinding::bind)

@@ -31,5 +31,14 @@
         android:name="com.example.ibolot.ui.fragments.service.prosthetic.ProstheticsFragment"
         android:label="fragment_prosthetics"
         tools:layout="@layout/fragment_prosthetics" />
+    <fragment
+        android:id="@+id/doctorsFragment"
+        android:name="com.example.ibolot.ui.fragments.service.doctors.DoctorsFragment"
+        android:label="DoctorsFragment" />
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.example.ibolot.ui.fragments.service.record.RecordFragment"
+        android:label="fragment_record"
+        tools:layout="@layout/fragment_record" />
 
 </navigation>
