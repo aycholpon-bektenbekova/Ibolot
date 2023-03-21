@@ -8,4 +8,8 @@
         android:id="@+id/in_record"
         layout="@layout/include_record"/>
 
+    <include
+        android:id="@+id/in_calendar"
+        layout="@layout/include_calendar"
+        android:visibility="gone"/>
 </FrameLayout>
