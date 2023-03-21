@@ -5,12 +5,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
+        android:backgroundTint="@color/white"
         android:id="@+id/cv"
         android:layout_width="380dp"
         android:layout_height="100dp"
         app:cardCornerRadius="10dp"
         android:layout_margin="12dp"
-        android:backgroundTint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" >

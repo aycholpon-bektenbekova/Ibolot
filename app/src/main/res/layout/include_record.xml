@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/blue"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        android:layout_margin="16dp">
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/item_doctor"/>
+
+        <TextView
+            android:id="@+id/tvDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/name_doctor"
+            android:paddingStart="57dp"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_services"
+            android:textColor="@color/black"
+            android:layout_marginTop="31dp"
+            android:layout_marginStart="47dp"/>
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/et_border"
+                android:hint="@string/your_name"
+                android:layout_marginBottom="100dp"
+                android:paddingStart="10dp"/>
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/et_border"
+            android:hint="@string/et_number"
+            android:paddingStart="10dp"/>
+
+        <EditText
+            android:id="@+id/et_sos"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/et_border"
+            android:hint="@string/et_sos"
+            android:paddingStart="10dp"/>
+
+        <Button
+            android:id="@+id/btnRecord"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="100dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/et_border"
+            android:text="@string/day_record"
+            android:textColor="@color/black"
+            android:paddingStart="10dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

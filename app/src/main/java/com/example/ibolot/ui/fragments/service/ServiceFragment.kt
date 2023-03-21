@@ -13,7 +13,9 @@ import com.example.ibolot.ui.fragments.service.adapters.ServicesAdapter
 class ServiceFragment : BaseFragment(R.layout.fragment_service) {
 
     private val binding by viewBinding(FragmentServiceBinding::bind)
-    private val adapter = ServicesAdapter(this::onItemClick)
+    private val adapter = ServicesAdapter(
+        context = this@ServiceFragment,
+        onItemClick = this::onItemClick)
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -21,8 +23,7 @@ class ServiceFragment : BaseFragment(R.layout.fragment_service) {
     }
 
     private fun initialize() {
-        binding.rvServices.adapter = adapter
-
+        binding.inService.rvServices.adapter = adapter
     }
 
     private fun onItemClick(item: ServiceItem) {
