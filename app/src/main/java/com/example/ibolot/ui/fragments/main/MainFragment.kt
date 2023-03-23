@@ -1,37 +1,33 @@
 package com.example.ibolot.ui.fragments.main
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import by.kirich1409.viewbindingdelegate.viewBinding
+import com.example.ibolot.R
 import com.example.ibolot.databinding.FragmentMainBinding
+import com.example.ibolot.domain.model.ServiceItem
+import com.example.ibolot.ui.fragments.base.BaseFragment
+import com.example.ibolot.ui.fragments.main.adapters.AdapterPager
 
-class MainFragment : Fragment() {
+class MainFragment : BaseFragment(R.layout.fragment_main) {
 
-    private var _binding: FragmentMainBinding? = null
+    private val binding by viewBinding(FragmentMainBinding::bind)
+    private val adapter = AdapterPager(
+        context = this@MainFragment,
+        onItemClick = this::onItemClick
+    )
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(MainViewModel::class.java)
-
-        _binding = FragmentMainBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        return root
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        init()
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    fun init() {
+        binding.viewPager2.adapter = adapter
+        binding.dotsInd.setViewPager2(binding.viewPager2)
+    }
+    private fun onItemClick(item: ServiceItem) {
+        findNavController().navigate(R.id.navigation_service)
     }
 }
