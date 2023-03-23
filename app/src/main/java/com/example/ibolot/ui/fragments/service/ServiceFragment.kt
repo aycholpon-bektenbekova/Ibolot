@@ -3,6 +3,7 @@ package com.example.ibolot.ui.fragments.service
 import android.os.Bundle
 import android.view.View
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.LinearLayoutManager
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.ibolot.R
 import com.example.ibolot.databinding.FragmentServiceBinding
@@ -24,11 +25,19 @@ class ServiceFragment : BaseFragment(R.layout.fragment_service) {
 
     private fun initialize() {
         binding.inService.rvServices.adapter = adapter
+        binding.inService.rvServices.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+
+        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Ортопедия", 1))
+        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Имплантация ,удаление зубов,сложная хирургия", 2))
+        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Ортодотия (брекеты)", 3))
+        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Терапевтическая", 4))
+        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Хирургия", 5))
+        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Диагностика", 6))
     }
 
     private fun onItemClick(item: ServiceItem) {
-
-        findNavController().navigate(R.id.ortophedicsFragment)
+        if (item.keyId == 1) {
+            findNavController().navigate(R.id.ortophedicsFragment)
+        }
     }
-
 }
