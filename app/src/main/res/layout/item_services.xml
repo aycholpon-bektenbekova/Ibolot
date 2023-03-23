@@ -27,7 +27,7 @@
             android:id="@+id/tvServices"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/ortophedia"
+            android:text="@string/orthopedics"
             android:textAlignment="center"
             android:textSize="@dimen/text_size_services"
             android:textColor="@color/black"

@@ -8,6 +8,7 @@
     <fragment
         android:id="@+id/navigation_main"
         android:name="com.example.ibolot.ui.fragments.main.MainFragment"
+        tools:layout="@layout/fragment_main"
         android:label="@string/main_bottom"/>
 
     <fragment
@@ -24,21 +25,21 @@
     <fragment
         android:id="@+id/ortophedicsFragment"
         android:name="com.example.ibolot.ui.fragments.service.orthopedics.OrthopedicsFragment"
-        android:label="fragment_ortophedics"
+        android:label="@string/orthopedics"
         tools:layout="@layout/fragment_orthopedics" />
     <fragment
         android:id="@+id/prostheticsFragment"
         android:name="com.example.ibolot.ui.fragments.service.prosthetic.ProstheticsFragment"
-        android:label="fragment_prosthetics"
+        android:label="@string/orthopedics"
         tools:layout="@layout/fragment_prosthetics" />
     <fragment
         android:id="@+id/doctorsFragment"
         android:name="com.example.ibolot.ui.fragments.service.doctors.DoctorsFragment"
-        android:label="DoctorsFragment" />
+        android:label="@string/doctors" />
     <fragment
         android:id="@+id/recordFragment"
         android:name="com.example.ibolot.ui.fragments.service.record.RecordFragment"
-        android:label="fragment_record"
+        android:label="@string/record"
         tools:layout="@layout/fragment_record" />
 
 </navigation>
