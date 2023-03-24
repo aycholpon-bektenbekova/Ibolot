@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    android:background="@color/white"
     tools:context=".ui.fragments.main.MainFragment">
 
-    <androidx.viewpager2.widget.ViewPager2
+
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/view_pager2"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="match_parent"
@@ -19,7 +21,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/view_pager2"
-        app:layout_constraintBottom_toTopOf="@id/constraint_layout"
+        android:layout_marginTop="8dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dots_ind"
@@ -32,38 +34,13 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout"
-        app:layout_constraintTop_toBottomOf="@id/view_pager2"
+        app:layout_constraintTop_toBottomOf="@id/dots_ind"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-<<<<<<<<< Temporary merge branch 1
         android:orientation="vertical">
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recycler_view"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:layout_width="wrap_content"
-            android:orientation="horizontal"
-            android:layout_height="wrap_content" />
-
-        <me.relex.circleindicator.CircleIndicator
-            android:id="@+id/indicator"
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:elevation="4dp"/>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_margin="24dp"
-            android:orientation="vertical"
-            android:layout_height="match_parent" >
-=========
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
->>>>>>>>> Temporary merge branch 2
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view"

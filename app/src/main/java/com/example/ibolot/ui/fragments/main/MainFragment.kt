@@ -1,20 +1,17 @@
 package com.example.ibolot.ui.fragments.main
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
-<<<<<<<<< Temporary merge branch 1
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-=========
-import androidx.navigation.fragment.findNavController
+import android.widget.LinearLayout
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.ibolot.R
->>>>>>>>> Temporary merge branch 2
 import com.example.ibolot.databinding.FragmentMainBinding
-import com.example.ibolot.domain.model.ServiceItem
+import com.example.ibolot.domain.model.PagerItem
 import com.example.ibolot.ui.fragments.base.BaseFragment
 import com.example.ibolot.ui.fragments.main.adapters.AdapterPager
+
 
 class MainFragment : BaseFragment(R.layout.fragment_main) {
 
@@ -31,9 +28,11 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
 
     fun init() {
         binding.viewPager2.adapter = adapter
-        binding.dotsInd.setViewPager2(binding.viewPager2)
+        //binding.dotsInd.setViewPager2(binding.viewPager2)
+
+        Log.e("ololo" , "ololo")
+        adapter.addItems(PagerItem(R.drawable.main_img.toString() , 1))
     }
-    private fun onItemClick(item: ServiceItem) {
-        findNavController().navigate(R.id.navigation_service)
+    private fun onItemClick(item: PagerItem) {
     }
 }
