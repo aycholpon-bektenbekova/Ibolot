@@ -43,7 +43,7 @@
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_view"
+            android:id="@+id/card_doctors"
             android:layout_width="160dp"
             android:layout_height="170dp"
             app:cardCornerRadius="12dp"
@@ -55,7 +55,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/item_doctor"
+                android:src="@drawable/img_doctors_card"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -63,8 +63,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="24sp"
                 android:layout_gravity="bottom"
-                android:background="#D3F8F8F8"
-                android:text="Врачи"
+                android:background="@color/card_color"
+                android:text="@string/doctors"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp"
@@ -73,12 +73,12 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_view2"
+            android:id="@+id/card_children"
             android:layout_width="160dp"
             android:layout_height="170dp"
             android:layout_marginStart="24dp"
             app:cardCornerRadius="12dp"
-            app:layout_constraintStart_toEndOf="@id/card_view"
+            app:layout_constraintStart_toEndOf="@id/card_doctors"
             app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
@@ -86,7 +86,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/item_doctor"
+                android:src="@drawable/img_children_card"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -94,8 +94,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="24sp"
                 android:layout_gravity="bottom"
-                android:background="#D3F8F8F8"
-                android:text="Врачи"
+                android:background="@color/card_color"
+                android:text="@string/card_children"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp"
@@ -104,20 +104,20 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_view3"
+            android:id="@+id/card_about"
             android:layout_width="160dp"
             android:layout_height="170dp"
             android:layout_marginTop="16dp"
             app:cardCornerRadius="12dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/card_view">
+            app:layout_constraintTop_toBottomOf="@id/card_doctors">
 
             <ImageView
                 android:id="@+id/image_playlists3"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/item_doctor"
+                android:src="@drawable/img_about_us_card"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -125,8 +125,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="24sp"
                 android:layout_gravity="bottom"
-                android:background="#D3F8F8F8"
-                android:text="Врачи"
+                android:background="@color/card_color"
+                android:text="@string/card_about"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp"
@@ -135,21 +135,21 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_view4"
+            android:id="@+id/card_services"
             android:layout_width="160dp"
             android:layout_height="170dp"
             android:layout_marginStart="24dp"
             android:layout_marginTop="16dp"
             app:cardCornerRadius="12dp"
-            app:layout_constraintStart_toEndOf="@id/card_view3"
-            app:layout_constraintTop_toBottomOf="@id/card_view2">
+            app:layout_constraintStart_toEndOf="@id/card_about"
+            app:layout_constraintTop_toBottomOf="@id/card_children">
 
             <ImageView
                 android:id="@+id/image_playlists4"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/item_doctor"
+                android:src="@drawable/img_service_card"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -157,8 +157,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="24sp"
                 android:layout_gravity="bottom"
-                android:background="#D3F8F8F8"
-                android:text="Врачи"
+                android:background="@color/card_color"
+                android:text="@string/card_services"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="18sp"

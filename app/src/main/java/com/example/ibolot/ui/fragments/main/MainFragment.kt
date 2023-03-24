@@ -5,6 +5,8 @@ import android.util.Log
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.ibolot.R
 import com.example.ibolot.databinding.FragmentMainBinding
@@ -26,13 +28,27 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
         init()
     }
 
-    fun init() {
+    private fun init() {
         binding.viewPager2.adapter = adapter
         //binding.dotsInd.setViewPager2(binding.viewPager2)
 
-        Log.e("ololo" , "ololo")
-        adapter.addItems(PagerItem(R.drawable.main_img.toString() , 1))
+        binding.cardDoctors.setOnClickListener {
+            findNavController().navigate(R.id.doctorsFragment)
+        }
+        binding.cardChildren.setOnClickListener {
+            Toast.makeText(context, "Раздел находится в разработке", Toast.LENGTH_SHORT).show()
+        }
+        binding.cardAbout.setOnClickListener {
+            Toast.makeText(context, "Раздел находится в разработке", Toast.LENGTH_SHORT).show()
+        }
+        binding.cardServices.setOnClickListener {
+            findNavController().navigate(R.id.navigation_service)
+        }
+
+        Log.e("ololo", "ololo")
+        adapter.addItems(PagerItem(R.drawable.main_img.toString(), 1))
     }
+
     private fun onItemClick(item: PagerItem) {
     }
 }
