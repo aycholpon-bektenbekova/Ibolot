@@ -24,4 +24,7 @@
     <string name="et_sos">Опишите ваше беспокойство</string>
     <string name="doctors">Доктора</string>
     <string name="record">Запись</string>
+    <string name="card_children">Детям</string>
+    <string name="card_about">О нас</string>
+    <string name="card_services">Услуги</string>
 </resources>
