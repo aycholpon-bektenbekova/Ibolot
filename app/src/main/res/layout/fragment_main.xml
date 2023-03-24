@@ -1,4 +1,3 @@
-
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -8,7 +7,6 @@
     android:padding="16dp"
     tools:context=".ui.fragments.main.MainFragment">
 
-
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager2"
         android:orientation="horizontal"
@@ -17,21 +15,20 @@
         android:layout_height="188dp" />
 
     <com.tbuonomo.viewpagerdotsindicator.WormDotsIndicator
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/view_pager2"
-    android:layout_marginTop="8dp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:id="@+id/dots_ind"
-    app:dotsColor="@android:color/holo_blue_light"
-    app:selectedDotColor="@android:color/holo_blue_dark"
-    app:dotsSize="10dp"
-    app:dotsClickable="true"
-    app:dotsSpacing="4dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_pager2"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dots_ind"
+        app:dotsColor="@android:color/holo_blue_light"
+        app:selectedDotColor="@android:color/holo_blue_dark"
+        app:dotsSize="10dp"
+        app:dotsClickable="true"
+        app:dotsSpacing="4dp"/>
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout"
         app:layout_constraintTop_toBottomOf="@id/dots_ind"
         app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/doctors"
+                android:src="@drawable/img_doctors_card"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -85,7 +82,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/children"
+                android:src="@drawable/img_children_card"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -116,7 +113,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/about_us"
+                android:src="@drawable/img_about_us_card"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -148,7 +145,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:scaleType="centerCrop"
-                android:src="@drawable/img"
+                android:src="@drawable/img_service_card"
                 tools:ignore="ContentDescription" />
 
             <TextView
