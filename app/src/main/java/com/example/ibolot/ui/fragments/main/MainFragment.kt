@@ -16,9 +16,11 @@ import com.example.ibolot.ui.fragments.main.adapters.AdapterPager
 class MainFragment : BaseFragment(R.layout.fragment_main) {
 
     private val binding by viewBinding(FragmentMainBinding::bind)
+    private var imageList = mutableListOf<PagerItem>()
     private val adapter = AdapterPager(
         context = this@MainFragment,
-        onItemClick = this::onItemClick
+        onItemClick = this::onItemClick,
+        images = imageList
     )
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -28,10 +30,13 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
 
     fun init() {
         binding.viewPager2.adapter = adapter
-        //binding.dotsInd.setViewPager2(binding.viewPager2)
+        binding.dotsInd.setViewPager2(binding.viewPager2)
 
         Log.e("ololo" , "ololo")
-        adapter.addItems(PagerItem(R.drawable.main_img.toString() , 1))
+        imageList.add(PagerItem(R.drawable.main_img.toString() , 1))
+        imageList.add(PagerItem(R.drawable.main_img.toString() , 2))
+        imageList.add(PagerItem(R.drawable.main_img.toString() , 3))
+        imageList.add(PagerItem(R.drawable.main_img.toString() , 4))
     }
     private fun onItemClick(item: PagerItem) {
     }

@@ -5,20 +5,17 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.ibolot.R
-import com.example.ibolot.databinding.ViewPagerBinding
+import com.example.ibolot.databinding.ItemPagerBinding
 import com.example.ibolot.domain.model.PagerItem
 import com.example.ibolot.ui.fragments.main.MainFragment
 
-class AdapterPager(var context: MainFragment, private var onItemClick: (PagerItem) -> Unit) :
+class AdapterPager(
+    var context: MainFragment,
+    private var onItemClick: (PagerItem) -> Unit,
+    private var images: List<PagerItem>
+) :
     RecyclerView.Adapter<AdapterPager.PagerViewHolder>() {
-
-    private var views = arrayListOf<PagerItem>()
-
-    fun addItems(pagerItem: PagerItem){
-        views.add(pagerItem)
-    }
-
-    inner class PagerViewHolder(private val binding: ViewPagerBinding) :
+    inner class PagerViewHolder(private val binding: ItemPagerBinding) :
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(item: PagerItem) {
             onItemClick.invoke(item)
@@ -27,13 +24,19 @@ class AdapterPager(var context: MainFragment, private var onItemClick: (PagerIte
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PagerViewHolder {
-        return PagerViewHolder(ViewPagerBinding.inflate(LayoutInflater.from(parent.context) , parent , false))
+        return PagerViewHolder(
+            ItemPagerBinding.inflate(
+                LayoutInflater.from(parent.context),
+                parent,
+                false
+            )
+        )
 
     }
 
-    override fun getItemCount(): Int = views.size
+    override fun getItemCount(): Int = images.size
 
     override fun onBindViewHolder(holder: PagerViewHolder, position: Int) {
-        holder.onBind(views[position])
+        holder.onBind(images[position])
     }
 }
