@@ -29,10 +29,11 @@ class OrthopedicsFragment : BaseFragment(R.layout.fragment_orthopedics) {
             context, LinearLayoutManager.VERTICAL,
             false)
 
-        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "OOLOLO"))
-        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "OOLOLO"))
-        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "OOLOLO"))
-        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "OOLOLO"))
+        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Установка коронок"))
+        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Установка коронок"))
+        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Установка коронок"))
+        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Установка коронок"))
+        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Установка коронок"))
     }
 
     private fun onItemClick(item: ServiceItem) {
