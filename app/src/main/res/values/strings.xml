@@ -15,6 +15,9 @@
     <string name="desc2">- Надежная конструкция - Крепкая фиксация - Равномерное распределение нагрузки - Комфортная носка</string>
     <string name="price">Цена:    1000 сом</string>
     <string name="search_hint">Поиск услуг</string>
+    <string name="card_services">Акции</string>
+    <string name="card_about">О нас</string>
+    <string name="card_children">Детям</string>
     <string name="enter_search">Введите поиск</string>
     <string name="doctors_list">Врачи на которых можно записаться</string>
     <string name="name_doctor">Антон Иванович</string>

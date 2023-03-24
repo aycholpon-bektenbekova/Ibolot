@@ -28,8 +28,7 @@
         app:dotsClickable="true"
         app:dotsSpacing="4dp"/>
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+<androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout"
         app:layout_constraintTop_toBottomOf="@id/dots_ind"
         app:layout_constraintStart_toStartOf="parent"
