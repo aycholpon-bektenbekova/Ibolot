@@ -34,7 +34,6 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
         binding.viewPager2.adapter = adapter
         binding.dotsInd.setViewPager2(binding.viewPager2)
 
-        Log.e("ololo", "ololo")
         imageList.add(PagerItem(R.drawable.main_img.toString(), 1))
         imageList.add(PagerItem(R.drawable.main_img.toString(), 2))
         imageList.add(PagerItem(R.drawable.main_img.toString(), 3))
