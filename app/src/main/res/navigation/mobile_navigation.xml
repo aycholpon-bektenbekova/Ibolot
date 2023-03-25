@@ -8,6 +8,7 @@
     <fragment
         android:id="@+id/navigation_main"
         android:name="com.example.ibolot.ui.fragments.main.MainFragment"
+        tools:layout="@layout/fragment_main"
         android:label="@string/main_bottom"/>
 
     <fragment
@@ -31,20 +32,5 @@
         android:name="com.example.ibolot.ui.fragments.service.prosthetic.ProstheticsFragment"
         android:label="fragment_prosthetics"
         tools:layout="@layout/fragment_prosthetics" />
-    <fragment
-        android:id="@+id/exitFragment"
-        android:name="com.example.ibolot.ui.fragments.profile.ExitFragment"
-        android:label="fragment_exit"
-        tools:layout="@layout/fragment_exit" />
-    <fragment
-        android:id="@+id/registrationFragment"
-        android:name="com.example.ibolot.ui.fragments.profile.RegistrationFragment"
-        android:label="fragment_registration"
-        tools:layout="@layout/fragment_registration" />
-    <fragment
-        android:id="@+id/forgotPasswordFragment"
-        android:name="com.example.ibolot.ui.fragments.profile.ForgotPasswordFragment"
-        android:label="fragment_forgot_password"
-        tools:layout="@layout/fragment_forgot_password" />
 
 </navigation>

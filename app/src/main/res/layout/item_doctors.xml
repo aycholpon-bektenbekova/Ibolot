@@ -26,7 +26,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Антон Иванович"
+            android:text="@string/name_doctor"
             android:paddingStart="57dp"
             android:textAlignment="center"
             android:textSize="@dimen/text_size_services"

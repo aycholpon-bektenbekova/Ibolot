@@ -1,6 +1,6 @@
-package com.example.ibolot.domain.model
+package com.example.ibolot.data.model
 
-data class ServiceItem(
+data class ServiceItemDto(
     val image: String? = null,
     val title: String? = null,
     var keyId: Int = 0

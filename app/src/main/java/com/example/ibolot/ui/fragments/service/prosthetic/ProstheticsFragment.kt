@@ -2,10 +2,10 @@ package com.example.ibolot.ui.fragments.service.prosthetic
 
 import android.os.Bundle
 import android.view.View
+import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.ibolot.R
 import com.example.ibolot.databinding.FragmentProstheticsBinding
-import com.example.ibolot.databinding.FragmentServiceBinding
 import com.example.ibolot.ui.fragments.base.BaseFragment
 
 
@@ -19,8 +19,8 @@ class ProstheticsFragment : BaseFragment(R.layout.fragment_prosthetics) {
     }
 
     private fun initClicker() {
-        binding.btnSubmit.setOnClickListener {
-            //переход к списку врачей
+        binding.inEndFragment.btnSubmit.setOnClickListener {
+            findNavController().navigate(R.id.doctorsFragment)
         }
     }
 }

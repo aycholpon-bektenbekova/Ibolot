@@ -1,7 +1,6 @@
 package com.example.ibolot.domain.model
 
-data class ServiceItem(
+data class PagerItem(
     val image: String? = null,
-    val title: String? = null,
     var keyId: Int = 0
 ): java.io.Serializable
