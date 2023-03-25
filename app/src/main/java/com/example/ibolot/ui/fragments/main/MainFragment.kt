@@ -1,7 +1,6 @@
 package com.example.ibolot.ui.fragments.main
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
@@ -28,11 +27,10 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
         init()
     }
 
-    fun init() {
+    private fun init() {
         binding.viewPager2.adapter = adapter
         binding.dotsInd.setViewPager2(binding.viewPager2)
 
-        Log.e("ololo", "ololo")
         imageList.add(PagerItem(R.drawable.main_img.toString(), 1))
         imageList.add(PagerItem(R.drawable.main_img.toString(), 2))
         imageList.add(PagerItem(R.drawable.main_img.toString(), 3))
@@ -45,10 +43,10 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
             findNavController().navigate(R.id.doctorsFragment)
         }
         binding.cardChildren.setOnClickListener {
-            Toast.makeText(context, "Раздел находится в разработке", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, getString(R.string.Section_is_under_development), Toast.LENGTH_SHORT).show()
         }
         binding.cardAbout.setOnClickListener {
-            Toast.makeText(context, "Раздел находится в разработке", Toast.LENGTH_SHORT).show()
+            Toast.makeText(context, getString(R.string.Section_is_under_development), Toast.LENGTH_SHORT).show()
         }
         binding.cardServices.setOnClickListener {
             findNavController().navigate(R.id.navigation_service)
