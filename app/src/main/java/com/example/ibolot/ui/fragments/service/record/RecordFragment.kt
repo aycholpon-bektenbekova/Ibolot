@@ -1,14 +1,18 @@
 package com.example.ibolot.ui.fragments.service.record
 
+import android.app.DatePickerDialog
+import android.app.TimePickerDialog
 import android.os.Bundle
 import android.view.View
-import androidx.core.view.isVisible
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.ibolot.R
 import com.example.ibolot.databinding.FragmentRecordBinding
 import com.example.ibolot.ui.fragments.base.BaseFragment
 
-class RecordFragment : BaseFragment(R.layout.fragment_record) {
+class RecordFragment : BaseFragment(R.layout.fragment_record), TimePickerDialog.OnTimeSetListener,
+    DatePickerDialog.OnDateSetListener {
 
     private val binding by viewBinding(FragmentRecordBinding::bind)
 
@@ -19,11 +23,11 @@ class RecordFragment : BaseFragment(R.layout.fragment_record) {
 
     private fun initClicker() {
         binding.inRecord.btnRecord.setOnClickListener {
-           binding.inCalendar.calendar.isVisible = true
-           binding.inCalendar.calendar.setOnDateChangeListener { view, year, month, dayOfMonth ->
-               //textView.text = "$dayOfMonth.${month + 1}.$year"
-           }
 
+            if (binding.inRecord.etName.text.isEmpty()) {
+                Toast.makeText(requireContext(), getString(R.string.input_name), Toast.LENGTH_SHORT).show()
+            } else
+                findNavController().navigate(R.id.calendarFragment)
         }
     }
 }

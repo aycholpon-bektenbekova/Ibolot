@@ -41,5 +41,10 @@
         android:name="com.example.ibolot.ui.fragments.service.record.RecordFragment"
         android:label="@string/record"
         tools:layout="@layout/fragment_record" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.ibolot.ui.fragments.service.record.CalendarFragment"
+        android:label="@string/record"
+        tools:layout="@layout/fragment_calendar" />
 
 </navigation>
