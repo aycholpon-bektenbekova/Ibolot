@@ -34,7 +34,7 @@ class ProfileFragment : BaseFragment(R.layout.fragment_profile) {
 //        saveName()
         prefs = Prefs(requireContext())
         initClicker()
-
+//
 
         }
 
