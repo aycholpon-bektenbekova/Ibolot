@@ -31,8 +31,8 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
     }
 
     private fun init() {
-        binding.viewPager2.adapter = adapter
-        binding.dotsInd.setViewPager2(binding.viewPager2)
+        //binding.viewPager2.adapter = adapter
+        //binding.dotsInd.setViewPager2(binding.viewPager2)
 
     }
 
