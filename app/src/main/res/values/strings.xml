@@ -27,6 +27,7 @@
     <string name="card_children">Детям</string>
     <string name="card_about">О нас</string>
     <string name="card_services">Услуги</string>
+    <string name="Section_is_under_development">Раздел находится в разработке</string>
     <string name="time_record">Выберите время для записи</string>
     <string name="back">Назад</string>
     <string name="input_name">Введите ваше имя</string>
