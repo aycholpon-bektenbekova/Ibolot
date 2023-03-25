@@ -31,4 +31,6 @@
     <string name="time_record">Выберите время для записи</string>
     <string name="back">Назад</string>
     <string name="input_name">Введите ваше имя</string>
+    <string name="protez_">Преимущества съемного протеза с балочной фиксацией</string>
+    <string name="image">image</string>
 </resources>
