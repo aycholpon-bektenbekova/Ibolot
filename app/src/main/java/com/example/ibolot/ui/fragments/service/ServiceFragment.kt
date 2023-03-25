@@ -27,12 +27,12 @@ class ServiceFragment : BaseFragment(R.layout.fragment_service) {
         binding.inService.rvServices.adapter = adapter
         binding.inService.rvServices.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
 
-        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Ортопедия", 1))
-        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Имплантация ,удаление зубов,сложная хирургия", 2))
-        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Ортодотия (брекеты)", 3))
-        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Терапевтическая", 4))
-        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Хирургия", 5))
-        adapter.addItems(ServiceItem(R.drawable.item.toString(), "Диагностика", 6))
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Ортопедия", 1))
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Имплантация ,удаление зубов,сложная хирургия", 2))
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Ортодотия (брекеты)", 3))
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Терапевтическая", 4))
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Хирургия", 5))
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Диагностика", 6))
     }
 
     private fun onItemClick(item: ServiceItem) {
