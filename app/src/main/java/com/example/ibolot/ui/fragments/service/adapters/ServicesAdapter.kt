@@ -27,6 +27,8 @@ class ServicesAdapter (
 
     override fun getItemCount() = views.size
 
+
+
     inner class ServicesViewHolder(private val binding: ItemServicesBinding): RecyclerView.ViewHolder(binding.root) {
         fun bind(item: ServiceItem) {
             itemView.setOnClickListener {

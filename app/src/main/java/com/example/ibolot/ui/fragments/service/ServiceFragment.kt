@@ -22,7 +22,6 @@ class ServiceFragment : BaseFragment(R.layout.fragment_service) {
 
     private fun initialize() {
         binding.rvServices.adapter = adapter
-
     }
 
     private fun onItemClick(item: ServiceItem) {
