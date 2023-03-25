@@ -1,4 +1,4 @@
-package com.example.ibolot.domain.result
+package com.example.ibolot.data.result
 
 enum class Status {
     SUCCESS,

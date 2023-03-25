@@ -12,7 +12,6 @@ interface ApiService {
         @Query("part") part: String,
         @Query("channelId") channelId: String,
         @Query("maxResults") maxResults: Int,
-       // @Query("pageToken") pageToken : String?
     ): Call<ServiceItem>
     @GET("playlistItems")
     fun getItemLists(
@@ -21,6 +20,5 @@ interface ApiService {
         @Query("channelId") channelId: String,
         @Query("maxResults") maxResults: Int,
         @Query("playlistId") id:String
-        // @Query("pageToken") pageToken : String?
     ): Call<ServiceItem>
 }

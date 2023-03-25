@@ -21,7 +21,7 @@
             android:layout_height="match_parent"
             android:scaleType="fitStart"
             app:cardCornerRadius="10dp"
-            android:src="@drawable/item"/>
+            android:src="@drawable/item_service"/>
 
         <TextView
             android:id="@+id/tvServices"
