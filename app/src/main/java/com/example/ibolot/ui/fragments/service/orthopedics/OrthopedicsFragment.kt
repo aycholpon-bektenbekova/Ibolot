@@ -29,15 +29,15 @@ class OrthopedicsFragment : BaseFragment(R.layout.fragment_orthopedics) {
             context, LinearLayoutManager.VERTICAL,
             false)
 
-        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Установка коронок"))
-        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Установка коронок"))
-        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Установка коронок"))
-        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Установка коронок"))
-        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Установка коронок"))
+        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Протезирование"))
+        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Протезирование"))
+        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Протезирование"))
+        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Протезирование"))
+        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Протезирование"))
+        adapter.addItems(ServiceItem(R.drawable.orthopedics.toString(), "Протезирование"))
     }
 
     private fun onItemClick(item: ServiceItem) {
-
         findNavController().navigate(R.id.prostheticsFragment)
     }
 }
