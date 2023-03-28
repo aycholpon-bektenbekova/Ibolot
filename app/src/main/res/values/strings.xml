@@ -7,7 +7,6 @@
     <string name="service_bottom">Услуги</string>
     <string name="profile_bottom">Профиль</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="orthopedics">Ортопедия</string>
     <string name="protez">Протезирование при полном отсутствии зубов</string>
     <string name="submit">записаться</string>
@@ -33,4 +32,14 @@
     <string name="input_name">Введите ваше имя</string>
     <string name="protez_">Преимущества съемного протеза с балочной фиксацией</string>
     <string name="image">image</string>
+    <string name="otbelivanie">Отбеливание зубов</string>
+    <string name="jev">Восстановление функций</string>
+    <string name="protezirovanie">Протезирование</string>
+    <string name="dentures">Съемные протезы</string>
+    <string name="coronki">Установка коронок</string>
+    <string name="implant">Имплантация зубов</string>
+    <string name="brackets">Установка брекетов</string>
+    <string name="caries">Лечение кариеса</string>
+    <string name="desc">Условно-съёмные протезы на имплантатах отличаются своей прочностью и надежностью. Вся конструкция будет надежно закреплена. Всегда открытое небо и никаких натираний на деснах! Еще один плюс такого протеза – это легкость и воздушность</string>
+    <string name="crowns_desc">Все начинается с рентгенологической диагностики. Если есть необходимость, нужно пролечить зубы – вычистить кариозные полости, запломбировать корневые каналы, удалить нерв и т.д. При установке мостовидного протеза стоматологи часто убирают нерв и у здоровых зубов.</string>
 </resources>
