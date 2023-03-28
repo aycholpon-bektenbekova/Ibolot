@@ -23,13 +23,13 @@
         android:label="@string/profile_bottom" />
 
     <fragment
-        android:id="@+id/ortophedicsFragment"
-        android:name="com.example.ibolot.ui.fragments.service.orthopedics.OrthopedicsFragment"
-        android:label="@string/orthopedics"
-        tools:layout="@layout/fragment_orthopedics" />
+        android:id="@+id/denturesFragment"
+        android:name="com.example.ibolot.ui.fragments.service.detail.DenturesFragment"
+        android:label="@string/service_bottom"
+        tools:layout="@layout/fragment_dentures" />
     <fragment
         android:id="@+id/prostheticsFragment"
-        android:name="com.example.ibolot.ui.fragments.service.prosthetic.ProstheticsFragment"
+        android:name="com.example.ibolot.ui.fragments.service.detail.ProstheticsFragment"
         android:label="@string/orthopedics"
         tools:layout="@layout/fragment_prosthetics" />
     <fragment
@@ -46,6 +46,16 @@
         android:name="com.example.ibolot.ui.fragments.service.record.CalendarFragment"
         android:label="@string/record"
         tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/jevFragment"
+        android:name="com.example.ibolot.ui.fragments.service.detail.JevFragment"
+        android:label="@string/service_bottom"
+        tools:layout="@layout/fragment_jev" />
+    <fragment
+        android:id="@+id/crownsFragment"
+        android:name="com.example.ibolot.ui.fragments.service.detail.CrownsFragment"
+        android:label="@string/service_bottom"
+        tools:layout="@layout/fragment_crowns" />
 
     <fragment
         android:id="@+id/aboutFragment"

@@ -27,11 +27,11 @@ class DoctorsFragment : BaseFragment(R.layout.fragment_doctors) {
         binding.rvDoctors.adapter = adapter
         binding.rvDoctors.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
 
-        adapter.addItems(ServiceItem(R.drawable.item_doctor.toString(), R.string.name_doctor.toString(), 1))
-        adapter.addItems(ServiceItem(R.drawable.item_doctor.toString(), R.string.name_doctor.toString(), 1))
-        adapter.addItems(ServiceItem(R.drawable.item_doctor.toString(), R.string.name_doctor.toString(), 1))
-        adapter.addItems(ServiceItem(R.drawable.item_doctor.toString(), R.string.name_doctor.toString(), 1))
-        adapter.addItems(ServiceItem(R.drawable.item_doctor.toString(), R.string.name_doctor.toString(), 1))
+        adapter.addItems(ServiceItem(R.drawable.item_doctor.toString(), getString(R.string.name_doctor), 1))
+        adapter.addItems(ServiceItem(R.drawable.item_doctor.toString(), getString(R.string.name_doctor), 1))
+        adapter.addItems(ServiceItem(R.drawable.item_doctor.toString(), getString(R.string.name_doctor), 1))
+        adapter.addItems(ServiceItem(R.drawable.item_doctor.toString(), getString(R.string.name_doctor), 1))
+        adapter.addItems(ServiceItem(R.drawable.item_doctor.toString(), getString(R.string.name_doctor), 1))
     }
 
     private fun onItemClick(item: ServiceItem) {
