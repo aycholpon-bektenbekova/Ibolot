@@ -15,7 +15,7 @@
         android:id="@+id/navigation_service"
         android:name="com.example.ibolot.ui.fragments.service.ServiceFragment"
         android:label="@string/service_bottom"
-        tools:layout="@layout/fragment_service"/>
+        tools:layout="@layout/fragment_service" />
 
     <fragment
         android:id="@+id/navigation_profile"
@@ -46,5 +46,11 @@
         android:name="com.example.ibolot.ui.fragments.service.record.CalendarFragment"
         android:label="@string/record"
         tools:layout="@layout/fragment_calendar" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.ibolot.ui.fragments.main.AboutFragment"
+        android:label="@string/card_about"
+        tools:layout="@layout/fragment_about" />
 
 </navigation>
