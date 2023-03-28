@@ -30,6 +30,13 @@
     <string name="time_record">Выберите время для записи</string>
     <string name="back">Назад</string>
     <string name="input_name">Введите ваше имя</string>
+    <string name="ibolot_description">Ibolot использует стандарты московского медицинского центра \"Открытая Клиника\". Наши врачи используют стандартизированные алгоритмы приёма пациентов.</string>
+    <string name="ibolot_description2">Ibolot использует инновационный подход к ведению приёмов – мы клиника, в которой информационные технологии интегрированы во все процессы.</string>
+    <string name="ibolot_description3">Ibolot выстраивает доверительные отношения со своими пациентами. Мы не позволяем нашим врачам выписывать лишние назначения по лекарствам и лабораторным анализам.</string>
+    <string name="ibolot_title">О НАШЕЙ КЛИНИКЕ</string>
+    <string name="ibolot_title2">РАБОТАЕМ ПО СТАНДАРТАМ</string>
+    <string name="ibolot_title3">ИСПОЛЬЗУЕМ ЦИФРОВОЙ ПОДХОД</string>
+    <string name="ibolot_title4">НЕ ДЕЛАЕМ ГИПЕРДИАГНОСТИКУ</string>
     <string name="protez_">Преимущества съемного протеза с балочной фиксацией</string>
     <string name="image">image</string>
     <string name="otbelivanie">Отбеливание зубов</string>
