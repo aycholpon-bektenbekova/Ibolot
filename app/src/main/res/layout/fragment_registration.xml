@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/ibolot_background"
+    tools:context=".ui.fragments.profile.RegistrationFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Регистрация"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="180dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Имя"
+app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            android:textSize="12sp"
+            android:id="@+id/et_first_name"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_height="40dp"/>
+
+        <EditText
+            android:id="@+id/et_second_name"
+            android:layout_width="180dp"
+            app:layout_constraintStart_toEndOf="@id/et_first_name"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Фамилия"
+            android:inputType="textPersonName"
+            android:paddingStart="8dp"
+            android:textSize="12sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_background"
+        android:hint="Электронный адрес"
+        android:textSize="12sp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/et_email"
+        android:paddingStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_background"
+        android:hint="Дата Рождения"
+        android:textSize="12sp"
+        android:inputType="date"
+        android:id="@+id/et_birthday"
+        android:paddingStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_background"
+        android:hint="Номер телефона"
+        android:textSize="12sp"
+        android:inputType="phone"
+        android:id="@+id/et_number"
+        android:paddingStart="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_height="40dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:background="@drawable/edittext_background"
+        android:hint="Придумайте пароль"
+        android:textSize="12sp"
+        android:id="@+id/et_password"
+        android:paddingStart="8dp"
+        android:layout_marginBottom="20dp"
+        android:layout_height="40dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        app:cornerRadius="8dp"
+        android:id="@+id/btn_exit"
+        android:backgroundTint="@color/ibolot"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        android:text="Зарегистрироваться"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_height="60dp"/>
+
+
+</LinearLayout>
