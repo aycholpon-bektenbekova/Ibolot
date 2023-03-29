@@ -15,7 +15,7 @@ class ExitFragment : Fragment(R.layout.fragment_exit) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-initClicker()
+        initClicker()
     }
 
     private fun initClicker() {
