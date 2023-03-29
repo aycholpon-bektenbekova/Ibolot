@@ -62,7 +62,6 @@
             android:paddingStart="10dp"/>
 
         <com.google.android.material.button.MaterialButton
-            app:backgroundTint="@color/blue"
             android:id="@+id/btnRecord"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -71,7 +70,6 @@
             android:layout_marginHorizontal="20dp"
             android:background="@drawable/et_border"
             android:text="@string/day_record"
-            android:textColor="@color/black"
             android:paddingStart="10dp"/>
 
     </androidx.cardview.widget.CardView>
