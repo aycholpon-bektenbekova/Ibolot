@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "298971498309",
+    "project_id": "ibolot-5a1c5",
+    "storage_bucket": "ibolot-5a1c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298971498309:android:68c41eac8e3cf5c39b202c",
+        "android_client_info": {
+          "package_name": "com.example.ibolot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298971498309-blv5qi9848losmv7s0jrtm9kd8gekm82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfSwpckZUCLIM6J01l4b2ka2VoR5IUSeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298971498309-blv5qi9848losmv7s0jrtm9kd8gekm82.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -57,11 +57,7 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
             ).show()
         }
         binding.cardAbout.setOnClickListener {
-            Toast.makeText(
-                context,
-                getString(R.string.Section_is_under_development),
-                Toast.LENGTH_SHORT
-            ).show()
+            findNavController().navigate(R.id.aboutFragment)
         }
         binding.cardServices.setOnClickListener {
             findNavController().navigate(R.id.navigation_service)
