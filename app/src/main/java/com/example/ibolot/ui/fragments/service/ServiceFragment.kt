@@ -24,13 +24,19 @@ class ServiceFragment : BaseFragment(R.layout.fragment_service) {
     }
 
     private fun initialize() {
-        binding.rvServices.adapter = adapter
+        binding.inService.rvServices.adapter = adapter
+        binding.inService.rvServices.layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
 
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Ортопедия", 1))
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Имплантация ,удаление зубов,сложная хирургия", 2))
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Ортодотия (брекеты)", 3))
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Терапевтическая", 4))
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Хирургия", 5))
+        adapter.addItems(ServiceItem(R.drawable.item_service.toString(), "Диагностика", 6))
     }
 
     private fun onItemClick(item: ServiceItem) {
-
-        findNavController().navigate(R.id.ortophedicsFragment)
-    }
-
-}
+        if (item.keyId == 1) {
+            findNavController().navigate(R.id.ortophedicsFragment)
+        }
+    }}

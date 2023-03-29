@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@color/blue"
+    android:background="@drawable/ibolot_background"
     tools:context=".ui.fragments.profile.RegistrationFragment">
 
     <TextView
@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"/>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
@@ -106,7 +106,7 @@ app:layout_constraintStart_toStartOf="parent"
         android:layout_width="match_parent"
         app:cornerRadius="8dp"
         android:id="@+id/btn_exit"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/ibolot"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp"
         android:text="Зарегистрироваться"

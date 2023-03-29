@@ -25,12 +25,40 @@
     <fragment
         android:id="@+id/ortophedicsFragment"
         android:name="com.example.ibolot.ui.fragments.service.orthopedics.OrthopedicsFragment"
-        android:label="fragment_ortophedics"
+        android:label="Ортопедия"
         tools:layout="@layout/fragment_orthopedics" />
     <fragment
         android:id="@+id/prostheticsFragment"
         android:name="com.example.ibolot.ui.fragments.service.prosthetic.ProstheticsFragment"
-        android:label="fragment_prosthetics"
+        android:label="Протезирование"
         tools:layout="@layout/fragment_prosthetics" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.ibolot.ui.fragments.profile.ForgotPasswordFragment"
+        android:label="Восстановить пароль"
+        tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/exitFragment"
+        android:name="com.example.ibolot.ui.fragments.profile.ExitFragment"
+        android:label="Войти"
+        tools:layout="@layout/fragment_exit" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.ibolot.ui.fragments.profile.RegistrationFragment"
+        android:label="Регистрация"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.ibolot.ui.fragments.service.record.CalendarFragment"
+        android:label="Запись"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/doctorsFragment"
+        android:name="com.example.ibolot.ui.fragments.service.doctors.DoctorsFragment"
+        android:label="Доктора" />
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.example.ibolot.ui.fragments.service.record.RecordFragment"
+        android:label="Запись" />
 
 </navigation>

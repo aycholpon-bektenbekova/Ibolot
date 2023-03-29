@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@color/blue"
+    android:background="@drawable/ibolot_background"
     android:padding="16dp"
     android:layout_height="match_parent"
     tools:context=".ui.fragments.profile.ProfileFragment">
@@ -56,7 +56,7 @@
         android:layout_width="match_parent"
         app:cornerRadius="8dp"
         android:id="@+id/btn_exit"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/ibolot"
         app:strokeColor="@color/black"
         app:strokeWidth="2dp"
         android:text="Войти в Ibolot"
