@@ -47,7 +47,6 @@
         android:layout_height="wrap_content"
         android:text="@string/time_record"
         android:textSize="16sp"
-        android:backgroundTint="@color/blue"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -72,7 +71,6 @@
         android:layout_height="wrap_content"
         android:text="@string/back"
         android:textSize="16sp"
-        android:backgroundTint="@color/blue"
         app:layout_constraintTop_toBottomOf="@+id/tv_textTime"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
