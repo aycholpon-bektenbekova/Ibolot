@@ -7,7 +7,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/blue"
+    android:background="@drawable/ibolot_background"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView

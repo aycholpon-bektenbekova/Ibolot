@@ -1,39 +1,77 @@
 package com.example.ibolot.ui.fragments.profile
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
-import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.findNavController
+import by.kirich1409.viewbindingdelegate.viewBinding
+import com.example.ibolot.Prefs
 import com.example.ibolot.R
 import com.example.ibolot.databinding.FragmentProfileBinding
 import com.example.ibolot.ui.fragments.base.BaseFragment
-import com.example.ibolot.ui.fragments.main.MainViewModel
 
 class ProfileFragment : BaseFragment(R.layout.fragment_profile) {
 
+    private val binding by viewBinding(FragmentProfileBinding::bind)
+    private lateinit var launcher: ActivityResultLauncher<Intent>
+    private lateinit var prefs: Prefs
 
-    private var _binding: FragmentProfileBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(MainViewModel::class.java)
-
-        _binding = FragmentProfileBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        return root
-    }
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        saveImage()
+        initLauncher()
+saveName()
+        initClick()
     }
 
+    private fun initClick() {
+        binding.btnExit.setOnClickListener {
+            findNavController().navigate(R.id.exitFragment)
+        }
+    }
+
+    private fun saveImage() {
+        binding.pickPhoto.setOnClickListener {
+            val intent = Intent()
+            intent.action = Intent.ACTION_PICK
+            intent.type = "image/*"
+            launcher.launch(intent)
+        }
+    }
+
+    private fun initLauncher() {
+        launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+
+            if (it.resultCode == AppCompatActivity.RESULT_OK) {
+                val image = it.data?.data
+                if (image != null) {
+                    binding.profileImage.setImageURI(image)
+
+                }
+            }
+        }
+    }
+
+    private fun saveName() {
+
+        binding.tvName.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                context?.let { Prefs(it).saveNames(s.toString()) };
+                //prefs.saveNames(s.toString());
+            }
+        })
+        binding.tvName.setText(context?.let { Prefs(it).getName() })
+        //binding.editText.setText(prefs.getName());
+    }
 }

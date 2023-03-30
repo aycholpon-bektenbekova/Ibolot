@@ -16,6 +16,13 @@
     <string name="search_hint">Поиск услуг</string>
     <string name="enter_search">Введите поиск</string>
     <string name="doctors_list">Врачи на которых можно записаться</string>
+    <string name="register_password">Пароль</string>
+    <string name="register_name">Телефон или Имя пользователя</string>
+    <string name="register">Войти в Ibolot</string>
+    <string name="register_exit">Войти</string>
+    <string name="register_forgot_password">Забыли пароль?</string>
+    <string name="register_save_your">Сохранить ваши данные</string>
+    <string name="register_registration">Регистрация</string>
     <string name="name_doctor">Антон Иванович</string>
     <string name="your_name">Ваше имя</string>
     <string name="et_number">Ваш телефон</string>
@@ -49,4 +56,5 @@
     <string name="caries">Лечение кариеса</string>
     <string name="desc">Условно-съёмные протезы на имплантатах отличаются своей прочностью и надежностью. Вся конструкция будет надежно закреплена. Всегда открытое небо и никаких натираний на деснах! Еще один плюс такого протеза – это легкость и воздушность</string>
     <string name="crowns_desc">Все начинается с рентгенологической диагностики. Если есть необходимость, нужно пролечить зубы – вычистить кариозные полости, запломбировать корневые каналы, удалить нерв и т.д. При установке мостовидного протеза стоматологи часто убирают нерв и у здоровых зубов.</string>
+    <string name="auth">Авторизация</string>
 </resources>

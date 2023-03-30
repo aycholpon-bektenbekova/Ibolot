@@ -65,5 +65,4 @@ class ServiceFragment : BaseFragment(R.layout.fragment_service) {
         if (item.keyId == 8) {
             findNavController().navigate(R.id.prostheticsFragment)
         }
-    }
-}
+    }}

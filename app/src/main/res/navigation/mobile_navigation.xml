@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_main">
+    app:startDestination="@+id/registrationFragment">
 
     <fragment
         android:id="@+id/navigation_main"
@@ -33,20 +33,34 @@
         android:label="@string/orthopedics"
         tools:layout="@layout/fragment_prosthetics" />
     <fragment
-        android:id="@+id/doctorsFragment"
-        android:name="com.example.ibolot.ui.fragments.service.doctors.DoctorsFragment"
-        android:label="@string/doctors" />
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.ibolot.ui.fragments.profile.ForgotPasswordFragment"
+        android:label="Восстановить пароль"
+        tools:layout="@layout/fragment_forgot_password" />
     <fragment
-        android:id="@+id/recordFragment"
-        android:name="com.example.ibolot.ui.fragments.service.record.RecordFragment"
-        android:label="@string/record"
-        tools:layout="@layout/fragment_record" />
+        android:id="@+id/exitFragment"
+        android:name="com.example.ibolot.ui.fragments.profile.ExitFragment"
+        android:label="Войти"
+        tools:layout="@layout/fragment_exit" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.ibolot.ui.fragments.profile.RegistrationFragment"
+        android:label="Регистрация"
+        tools:layout="@layout/fragment_registration" />
     <fragment
         android:id="@+id/calendarFragment"
         android:name="com.example.ibolot.ui.fragments.service.record.CalendarFragment"
-        android:label="@string/record"
+        android:label="Запись"
         tools:layout="@layout/fragment_calendar" />
     <fragment
+        android:id="@+id/doctorsFragment"
+        android:name="com.example.ibolot.ui.fragments.service.doctors.DoctorsFragment"
+        android:label="Доктора" />
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.example.ibolot.ui.fragments.service.record.RecordFragment"
+        android:label="Запись" />
+<fragment
         android:id="@+id/jevFragment"
         android:name="com.example.ibolot.ui.fragments.service.detail.JevFragment"
         android:label="@string/service_bottom"
