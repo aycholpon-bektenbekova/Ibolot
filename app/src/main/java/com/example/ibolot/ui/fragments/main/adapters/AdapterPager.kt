@@ -19,7 +19,7 @@ class AdapterPager(
         RecyclerView.ViewHolder(binding.root) {
         fun onBind(item: PagerItem) {
             onItemClick.invoke(item)
-            Glide.with(context).load(R.drawable.main_img).into(binding.pagerImage)
+            Glide.with(context).load(R.drawable.main_img).into(binding.imageView)
         }
     }
 
