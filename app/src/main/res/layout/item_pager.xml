@@ -15,7 +15,6 @@
             android:id="@+id/pager_image"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            android:src="@drawable/main_img" />
+            android:scaleType="fitXY" />
     </androidx.cardview.widget.CardView>
 </LinearLayout>

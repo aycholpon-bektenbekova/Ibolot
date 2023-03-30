@@ -9,6 +9,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.ibolot.R
 import com.example.ibolot.databinding.ActivityMainBinding
+import com.example.ibolot.ui.fragments.board.BoardFragment
+import com.example.ibolot.ui.fragments.board.Prefs
 
 class MainActivity : AppCompatActivity() {
 
@@ -24,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
 
+
         val appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.navigation_main,
@@ -38,5 +41,12 @@ class MainActivity : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        board()
+    }
+
+    private fun board() {
+
+
     }
 }
