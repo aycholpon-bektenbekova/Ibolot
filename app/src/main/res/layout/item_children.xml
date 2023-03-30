@@ -33,7 +33,7 @@
                 android:lines="2"
                 android:textColor="@color/black"
                 android:textSize="20sp"
-                android:text="@string/children"
+                android:text="@string/childrens"
                 android:layout_marginStart="18dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent"

@@ -26,7 +26,7 @@ class ChildrenFragment : BaseFragment(R.layout.fragment_children) {
     private fun initialize() {
         binding.recyclerView.adapter = adapter
 
-        adapter.addItems(ServiceItem(R.drawable.img_children.toString() , getString(R.string.children) , 1))
+        adapter.addItems(ServiceItem(R.drawable.main_img.toString() , getString(R.string.children) , 1))
         adapter.addItems(ServiceItem(R.drawable.children_iv.toString() , getString(R.string.tv_children) , 2))
         adapter.addItems(ServiceItem(R.drawable.iv_children.toString() , getString(R.string.children_tv) , 3))
     }

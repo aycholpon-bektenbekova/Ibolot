@@ -27,21 +27,14 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
         init()
     }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        loadData()
-    }
+    private fun init() {
+        binding.viewPager2.adapter = adapter
+        binding.dotsInd.setViewPager2(binding.viewPager2)
 
-    private fun loadData() {
         imageList.add(PagerItem(R.drawable.main_img.toString(), 1))
         imageList.add(PagerItem(R.drawable.main_img.toString(), 2))
         imageList.add(PagerItem(R.drawable.main_img.toString(), 3))
         imageList.add(PagerItem(R.drawable.main_img.toString(), 4))
-    }
-
-    private fun init() {
-        binding.viewPager2.adapter = adapter
-        binding.dotsInd.setViewPager2(binding.viewPager2)
     }
 
     private fun onItemClick(item: PagerItem) {
@@ -50,14 +43,10 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
             findNavController().navigate(R.id.doctorsFragment)
         }
         binding.cardChildren.setOnClickListener {
-            Toast.makeText(
-                context,
-                getString(R.string.Section_is_under_development),
-                Toast.LENGTH_SHORT
-            ).show()
+            findNavController().navigate(R.id.childrenFragment)
         }
         binding.cardAbout.setOnClickListener {
-            findNavController().navigate(R.id.aboutFragment)
+            Toast.makeText(context, getString(R.string.Section_is_under_development), Toast.LENGTH_SHORT).show()
         }
         binding.cardServices.setOnClickListener {
             findNavController().navigate(R.id.navigation_service)
