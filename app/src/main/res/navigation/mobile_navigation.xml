@@ -100,5 +100,9 @@
         android:name="com.example.ibolot.ui.fragments.main.details.ToothChildrenFragment"
         android:label="@string/childrens"
         tools:layout="@layout/fragment_tooth_children" />
+    <fragment
+        android:id="@+id/boardFragment"
+        android:name="com.example.ibolot.ui.fragments.board.BoardFragment"
+        tools:layout="@layout/fragment_board" />
 
 </navigation>

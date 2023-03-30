@@ -3,6 +3,7 @@ package com.example.ibolot.ui.fragments.profile
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.Toast
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -25,6 +26,9 @@ class RegistrationFragment : Fragment(R.layout.fragment_registration) {
         super.onViewCreated(view, savedInstanceState)
         initClick()
         binding.btnSms.setOnClickListener {
+            if (binding.etNumber.text.isEmpty()) {
+               // Toast.makeText(this@RegistrationFragment, "Input phone number", Toast.LENGTH_SHORT).show()
+            }
             initCallback()
             val options = PhoneAuthOptions.newBuilder(auth)
                 .setPhoneNumber(binding.etNumber.text.toString())
