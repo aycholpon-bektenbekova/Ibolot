@@ -3,13 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_main">
+    app:startDestination="@+id/registrationFragment">
 
     <fragment
         android:id="@+id/navigation_main"
         android:name="com.example.ibolot.ui.fragments.main.MainFragment"
-        android:label="@string/main_bottom"
-        tools:layout="@layout/fragment_main" />
+        tools:layout="@layout/fragment_main"
+        android:label="@string/main_bottom"/>
 
     <fragment
         android:id="@+id/navigation_service"
@@ -20,6 +20,85 @@
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.example.ibolot.ui.fragments.profile.ProfileFragment"
-        android:label="@string/profile_bottom"
-        tools:layout="@layout/fragment_profile" />
+        android:label="@string/profile_bottom" />
+
+    <fragment
+        android:id="@+id/denturesFragment"
+        android:name="com.example.ibolot.ui.fragments.service.detail.DenturesFragment"
+        android:label="@string/service_bottom"
+        tools:layout="@layout/fragment_dentures" />
+    <fragment
+        android:id="@+id/prostheticsFragment"
+        android:name="com.example.ibolot.ui.fragments.service.detail.ProstheticsFragment"
+        android:label="@string/orthopedics"
+        tools:layout="@layout/fragment_prosthetics" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.example.ibolot.ui.fragments.profile.ForgotPasswordFragment"
+        android:label="Восстановить пароль"
+        tools:layout="@layout/fragment_forgot_password" />
+    <fragment
+        android:id="@+id/exitFragment"
+        android:name="com.example.ibolot.ui.fragments.profile.ExitFragment"
+        android:label="Войти"
+        tools:layout="@layout/fragment_exit" />
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.example.ibolot.ui.fragments.profile.RegistrationFragment"
+        android:label="Регистрация"
+        tools:layout="@layout/fragment_registration" />
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.ibolot.ui.fragments.service.record.CalendarFragment"
+        android:label="Запись"
+        tools:layout="@layout/fragment_calendar" />
+    <fragment
+        android:id="@+id/doctorsFragment"
+        android:name="com.example.ibolot.ui.fragments.service.doctors.DoctorsFragment"
+        android:label="Доктора" />
+    <fragment
+        android:id="@+id/recordFragment"
+        android:name="com.example.ibolot.ui.fragments.service.record.RecordFragment"
+        android:label="Запись" />
+<fragment
+        android:id="@+id/jevFragment"
+        android:name="com.example.ibolot.ui.fragments.service.detail.JevFragment"
+        android:label="@string/service_bottom"
+        tools:layout="@layout/fragment_jev" />
+    <fragment
+        android:id="@+id/crownsFragment"
+        android:name="com.example.ibolot.ui.fragments.service.detail.CrownsFragment"
+        android:label="@string/service_bottom"
+        tools:layout="@layout/fragment_crowns" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.ibolot.ui.fragments.main.AboutFragment"
+        android:label="@string/card_about"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/childrenFragment"
+        android:name="com.example.ibolot.ui.fragments.main.ChildrenFragment"
+        android:label="@string/childrens"
+        tools:layout="@layout/fragment_children" />
+
+    <fragment
+        android:id="@+id/deleteToothFragment"
+        android:name="com.example.ibolot.ui.fragments.main.details.DeleteToothFragment"
+        android:label="@string/childrens"
+        tools:layout="@layout/fragment_delete_tooth" />
+
+    <fragment
+        android:id="@+id/dentalTreatmentFragment"
+        android:name="com.example.ibolot.ui.fragments.main.details.DentalTreatmentFragment"
+        android:label="@string/childrens"
+        tools:layout="@layout/fragment_dental_treatment" />
+
+    <fragment
+        android:id="@+id/toothChildrenFragment"
+        android:name="com.example.ibolot.ui.fragments.main.details.ToothChildrenFragment"
+        android:label="@string/childrens"
+        tools:layout="@layout/fragment_tooth_children" />
+
 </navigation>

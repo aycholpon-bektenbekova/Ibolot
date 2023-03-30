@@ -1,42 +1,77 @@
 package com.example.ibolot.ui.fragments.profile
 
+import android.content.Intent
 import android.os.Bundle
-import android.view.LayoutInflater
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
+import androidx.activity.result.ActivityResultLauncher
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.findNavController
+import by.kirich1409.viewbindingdelegate.viewBinding
+import com.example.ibolot.Prefs
+import com.example.ibolot.R
 import com.example.ibolot.databinding.FragmentProfileBinding
+import com.example.ibolot.ui.fragments.base.BaseFragment
 
-class ProfileFragment : Fragment() {
+class ProfileFragment : BaseFragment(R.layout.fragment_profile) {
 
-    private var _binding: FragmentProfileBinding? = null
+    private val binding by viewBinding(FragmentProfileBinding::bind)
+    private lateinit var launcher: ActivityResultLauncher<Intent>
+    private lateinit var prefs: Prefs
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val notificationsViewModel =
-            ViewModelProvider(this).get(ProfileViewModel::class.java)
-
-        _binding = FragmentProfileBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val textView: TextView = binding.textNotifications
-        notificationsViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        saveImage()
+        initLauncher()
+saveName()
+        initClick()
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    private fun initClick() {
+        binding.btnExit.setOnClickListener {
+            findNavController().navigate(R.id.exitFragment)
+        }
+    }
+
+    private fun saveImage() {
+        binding.pickPhoto.setOnClickListener {
+            val intent = Intent()
+            intent.action = Intent.ACTION_PICK
+            intent.type = "image/*"
+            launcher.launch(intent)
+        }
+    }
+
+    private fun initLauncher() {
+        launcher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
+
+            if (it.resultCode == AppCompatActivity.RESULT_OK) {
+                val image = it.data?.data
+                if (image != null) {
+                    binding.profileImage.setImageURI(image)
+
+                }
+            }
+        }
+    }
+
+    private fun saveName() {
+
+        binding.tvName.addTextChangedListener(object : TextWatcher {
+            override fun afterTextChanged(s: Editable?) {
+            }
+
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {
+            }
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                context?.let { Prefs(it).saveNames(s.toString()) };
+                //prefs.saveNames(s.toString());
+            }
+        })
+        binding.tvName.setText(context?.let { Prefs(it).getName() })
+        //binding.editText.setText(prefs.getName());
     }
 }
