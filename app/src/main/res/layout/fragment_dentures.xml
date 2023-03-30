@@ -2,10 +2,10 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/blue">
+    android:background="@drawable/ibolot_background">
 
    <include
-      android:id="@+id/in_orthopedic"
-      layout="@layout/include_service"/>
+      android:id="@+id/in_end_fragment"
+      layout="@layout/include_base"/>
 
 </FrameLayout>
