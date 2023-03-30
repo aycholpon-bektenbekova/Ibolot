@@ -43,7 +43,7 @@ class MainFragment : BaseFragment(R.layout.fragment_main) {
             findNavController().navigate(R.id.doctorsFragment)
         }
         binding.cardChildren.setOnClickListener {
-            Toast.makeText(context, getString(R.string.Section_is_under_development), Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.childrenFragment)
         }
         binding.cardAbout.setOnClickListener {
             Toast.makeText(context, getString(R.string.Section_is_under_development), Toast.LENGTH_SHORT).show()

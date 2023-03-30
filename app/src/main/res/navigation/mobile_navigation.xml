@@ -47,4 +47,28 @@
         android:label="@string/record"
         tools:layout="@layout/fragment_calendar" />
 
+    <fragment
+        android:id="@+id/childrenFragment"
+        android:name="com.example.ibolot.ui.fragments.main.ChildrenFragment"
+        android:label="@string/childrens"
+        tools:layout="@layout/fragment_children" />
+
+    <fragment
+        android:id="@+id/deleteToothFragment"
+        android:name="com.example.ibolot.ui.fragments.main.details.DeleteToothFragment"
+        android:label="@string/childrens"
+        tools:layout="@layout/fragment_delete_tooth" />
+
+    <fragment
+        android:id="@+id/dentalTreatmentFragment"
+        android:name="com.example.ibolot.ui.fragments.main.details.DentalTreatmentFragment"
+        android:label="@string/childrens"
+        tools:layout="@layout/fragment_dental_treatment" />
+
+    <fragment
+        android:id="@+id/toothChildrenFragment"
+        android:name="com.example.ibolot.ui.fragments.main.details.ToothChildrenFragment"
+        android:label="@string/childrens"
+        tools:layout="@layout/fragment_tooth_children" />
+
 </navigation>
